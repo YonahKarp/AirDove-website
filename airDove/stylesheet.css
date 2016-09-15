@@ -1,0 +1,119 @@
+#overHeader{
+    width: 100%;
+}
+
+#header{
+    /*position: absolute;
+    bottom: -1em;*/
+    width: 100%;
+}
+
+body{
+    background-image: url("./img/clouds.jpg");
+    margin-top: -2em;
+}
+
+#footer{
+    color: #8bc9e3;
+    height: 5em;
+    background-color: aliceblue;
+
+    width: 100%;
+    bottom: 0;
+    padding-top: -15em;
+    clear: both;
+}
+
+#footer ul{
+    margin-left: 5em;
+    margin-right: auto;
+}
+#footer ul ul{
+    display: inline-block;
+}
+
+
+.indent{
+    margin-left: 3em;
+    margin-bottom: 5em;
+}
+
+#login{
+    position: fixed;
+    top: 17%;
+    right: 10%;
+    width: 35%;
+}
+
+#login p, #login input{
+    margin-left: 1em;
+}
+
+#top{
+    margin-top: 1em;
+}
+
+
+
+#contentBox{
+    width: 50em;
+    height: 20em;
+    padding-bottom: 40em;
+    margin-bottom: 5em;
+    margin-left: 5em;
+}
+
+#contentBox img{
+    width: 50em;
+}
+
+#slides img {
+    display: none;
+    background-color: #3baae3;
+    color: #8bc9e3;
+
+}
+
+.datepicker{
+    /*margin-left: 2em;*/
+}
+
+.tablefull{
+    width: 90%;
+}
+
+.tableHead{
+    background-color: #3baae3;
+    width: 90%;
+    height: 3em;
+
+}
+
+.tableColumn{
+    background-color: #8bc9e3;
+    width: 90%;
+    height: 3em;
+}
+
+td, th{
+    text-align: center;
+}
+
+.hidden{
+    display: none;
+}
+
+/*
+.floatLeft{
+    float: left;
+    width: 50%;
+}
+
+.floatRight{
+    float: right;
+    width: 50%
+}*/
+
+.siteMap{
+    color: #00bfbf;
+}

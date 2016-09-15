@@ -1,0 +1,58 @@
+-- MySQL dump 10.13  Distrib 5.6.24, for osx10.8 (x86_64)
+--
+-- Host: 127.0.0.1    Database: AirDove
+-- ------------------------------------------------------
+-- Server version	5.7.11
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `flights`
+--
+
+DROP TABLE IF EXISTS `flights`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `flights` (
+  `flightID` int(11) NOT NULL,
+  `aircraftModel` varchar(45) DEFAULT NULL,
+  `fromLocation` varchar(3) DEFAULT NULL,
+  `toLocation` varchar(3) DEFAULT NULL,
+  `basePrice` double(16,2) DEFAULT NULL,
+  `leavingDate` date DEFAULT NULL,
+  `leavingTime` time DEFAULT NULL,
+  `arrivingDate` date DEFAULT NULL,
+  `arrivingTime` time DEFAULT NULL,
+  PRIMARY KEY (`flightID`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `flights`
+--
+
+LOCK TABLES `flights` WRITE;
+/*!40000 ALTER TABLE `flights` DISABLE KEYS */;
+INSERT INTO `flights` VALUES (0,'Boeing 747','JFK','TLV',900.00,'2016-06-21','05:00:00','2016-06-21','10:00:00'),(1,'Boeing 737','MIA','TLV',1100.00,'2016-05-29','03:00:00','2016-05-30','14:00:00'),(2,'Boeing 777','JFK','MIA',200.00,'2016-05-31','13:00:00','2016-05-31','16:00:00'),(3,'Boeing 777','MIA','JFK',180.00,'2016-06-10','07:00:00','2016-06-10','10:00:00'),(4,'Boeing 747','TLV','JFK',900.00,'2016-06-26','10:00:00','2016-06-26','20:00:00'),(5,'Boeing 737','TLV','MIA',1200.00,'2016-06-02','12:00:00','2016-06-03','23:00:00'),(6,'Boeing 747','JFK','TLV',950.00,'2016-06-03','05:00:00','2016-06-03','10:00:00'),(7,'Boeing 737','MIA','TLV',1200.00,'2016-06-29','03:00:00','2016-06-29','14:00:00'),(8,'Boeing 777','JFK','MIA',230.00,'2016-06-10','13:00:00','2016-06-10','16:00:00'),(9,'Boeing 777','MIA','JFK',300.00,'2016-06-20','07:00:00','2016-06-20','10:00:00'),(10,'Boeing 747','TLV','JFK',1000.00,'2016-06-02','10:00:00','2016-06-02','20:00:00'),(11,'Boeing 737','TLV','MIA',1150.00,'2016-07-01','12:00:00','2016-07-01','23:00:00'),(12,'Boeing 747','JFK','TLV',800.00,'2016-06-09','05:00:00','2016-06-09','10:00:00'),(13,'Boeing 737','MIA','TLV',1000.00,'2016-06-19','03:00:00','2016-06-19','14:00:00'),(14,'Boeing 777','JFK','MIA',220.00,'2016-06-17','13:00:00','2016-06-17','16:00:00'),(15,'Boeing 777','MIA','JFK',240.00,'2016-06-01','07:00:00','2016-06-01','10:00:00'),(16,'Boeing 747','TLV','JFK',1100.00,'2016-06-22','10:00:00','2016-06-22','20:00:00'),(17,'Boeing 737','TLV','MIA',1200.00,'2016-07-21','12:00:00','2016-07-21','23:00:00');
+/*!40000 ALTER TABLE `flights` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2016-05-19 19:22:57
